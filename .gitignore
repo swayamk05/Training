@@ -1,0 +1,176 @@
+# ============================================================
+# TRAINING REPOSITORY - GLOBAL .gitignore
+# Covers Django, Python, Angular, Node.js and local databases
+# ============================================================
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python compiled/native files
+*.so
+
+# Python packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# ============================================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ============================================================
+
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# pyenv / local Python environment
+.pyenv/
+.python-version
+
+
+# ============================================================
+# DJANGO
+# ============================================================
+
+# Local Django database
+db.sqlite3
+db.sqlite3-journal
+db.sqlite3-wal
+db.sqlite3-shm
+
+# Django logs
+*.log
+
+# Collected static files
+staticfiles/
+
+# User uploaded files
+media/
+
+
+# ============================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# Local configuration
+*.secret
+secrets/
+secrets.json
+
+
+# ============================================================
+# NODE.JS / ANGULAR
+# ============================================================
+
+# Dependencies
+node_modules/
+
+# Angular build output
+dist/
+
+# Angular cache
+.angular/
+.cache/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional npm cache
+.npm/
+
+
+# ============================================================
+# ANGULAR ENVIRONMENT FILES
+# ============================================================
+
+# Ignore local environment files if they contain secrets
+# Keep environment templates/examples in Git
+src/environments/*.local.ts
+
+
+# ============================================================
+# IDE / EDITOR
+# ============================================================
+
+.vscode/
+.idea/
+
+# VS Code settings can contain machine-specific information
+*.code-workspace
+
+
+# ============================================================
+# OPERATING SYSTEM
+# ============================================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+
+
+# ============================================================
+# TESTING / COVERAGE
+# ============================================================
+
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+
+# ============================================================
+# JUPYTER
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
